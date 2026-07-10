@@ -58,9 +58,13 @@ For each repo, resolve the five dimensions with this priority:
 3. **Ask me** (concise multiple-choice, valid folder names plus "none") for anything still
    ambiguous or absent. Batch the questions across all repos.
 
-In a single repo, `framework` and `backend` are mutually exclusive in practice: a repo is a
-frontend, a fullstack framework, or a backend API. Pick the one that fits and leave the other
-`none`. Any dimension may be `none`.
+Ask about EVERY dimension you could not confidently detect, INCLUDING backend — each as its
+own choice with a `none` option. Never silently skip a dimension; do not assume `none` for
+backend just because a frontend framework is present. A single repo is usually a frontend, a
+fullstack framework, OR a backend API, so it is normal for `framework` or `backend` to end up
+`none` — but that is my choice to make from the offered options, not yours to pre-empt. (If I
+want both a frontend framework and a separate backend in one place, that is the cue to use a
+project workspace instead.)
 
 Also collect a one-or-two-sentence description of what each repo is and who it is for (and,
 in workspace mode, one for the overall project). Draft from a README if one exists and
