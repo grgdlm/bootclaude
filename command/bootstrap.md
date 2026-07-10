@@ -21,7 +21,7 @@ folders were added later, they're valid too). Do not invent values outside these
 
 Current directory and key signals:
 
-!`pwd && echo "--- files ---" && ls -a && echo "--- package.json deps (if any) ---" && cat package.json 2>/dev/null | sed -n '/"dependencies"/,/}/p;/"devDependencies"/,/}/p' && echo "--- native signals ---" && ls *.xcodeproj *.xcworkspace Package.swift build.gradle build.gradle.kts settings.gradle* 2>/dev/null`
+!`pwd && echo "--- files ---" && ls -a && echo "--- package.json deps (if any) ---" && cat package.json 2>/dev/null | sed -n '/"dependencies"/,/}/p;/"devDependencies"/,/}/p' && echo "--- native signals ---" && find . -maxdepth 1 \( -name '*.xcodeproj' -o -name '*.xcworkspace' -o -name 'Package.swift' -o -name 'build.gradle*' -o -name 'settings.gradle*' \) 2>/dev/null || true`
 
 ## 2. Determine the stack
 
