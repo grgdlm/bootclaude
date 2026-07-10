@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+
+# Distribution artifact (built from the repo, not source)
+claude-bootstrap.zip
+*.zip
