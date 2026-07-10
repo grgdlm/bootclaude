@@ -5,7 +5,7 @@
 
 ## What this project is
 
-<!-- One or two sentences. What does this app do, who is it for? Fill this in. -->
+{{PROJECT_DESCRIPTION}}
 
 ## Golden rules
 
